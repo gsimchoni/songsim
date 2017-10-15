@@ -25,7 +25,7 @@ songsim(path)
 Use `colorfulMode`:
 
 ``` r
-songsim(path, colorfulMode = TRUE)
+songsim(path, colorfulMode = TRUE, mainTitle = "Formation - Beyonce")
 ```
 
 ![](README-unnamed-chunk-5-1.png)
@@ -36,6 +36,18 @@ Use `interactiveMode` if you have the `heatmaply` package installed:
 songsim(path, interactiveMode = TRUE, singleColor = "blue")
 ```
 
+``` r
+res <- songsim(path, interactiveMode = TRUE, singleColor = "blue")
+hm <- heatmaply::heatmaply(x = res$songMat, dendrogram = FALSE,
+                           limits = c(0, 1), showticklabels = FALSE,
+                           colors = c("white", "blue"),
+                           hide_colorbar = TRUE, plot_method = "plotly")
+htmlwidgets::saveWidget(hm, "~/beyonce_formation_hm.html", selfcontained = TRUE)
+```
+
+<iframe src="~/beyonce_formation_hm.html" style="position:absolute; height:575px; width:100%">
+</iframe>
+<hr style="height:570px; visibility:hidden;" />
 More information and examples [here](http://giorasimchoni.com/2017/08/08/2017-08-08-lambada-the-mocap-package/).
 
 More information from Colin Morris:
