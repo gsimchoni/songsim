@@ -139,15 +139,16 @@ songsim <- function(path = NULL, colorfulMode = FALSE,
 
         songMatRLong$color <- purrr::pmap_chr(songMatRLong, getRBColor)
       }
-      parMar <- par()$mar
-      par(mar = c(1,1,1,1))
+      parPty <- par()$pty
+      par(pty = "s")
       do.call(plot, c(list(x = songMatRLong$Var1, y = songMatRLong$Var2,
                            col = songMatRLong$color,
-                           pch = 15, cex = 0.2 * 400/length(songWords), xaxt = "n", yaxt = "n",
-                           bty = "n", asp = 1, main = mainTitle, xlab = "",
+                           pch = 15, cex = 0.2 * 400/length(songWords),
+                           xaxt = "n", yaxt = "n",
+                           main = mainTitle, xlab = "",
                            ylab = ""),
                       plotOptions))
-      par(mar = parMar)
+      par(pty = parPty)
     }
   }
 

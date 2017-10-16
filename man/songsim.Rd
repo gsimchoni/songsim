@@ -47,10 +47,10 @@ A cell (i, j) in a songsim square matrix is filled if word i in a song's lyrics
 is the same as word j. This simple rule would create fascintaing visualizations
 of songs lyrics as shown in the links below.
 
-If colorfulMode is set to TRUE, each word which appears more than once will be
-colored with its own color (only available with interactiveMode set to FALSE).
+If \code{colorfulMode} is set to TRUE, each word which appears more than once will be
+colored with its own color (currently only available with \code{interactiveMode} set to FALSE).
 
-If interactiveMode is set to TRUE and the user has the \code{heatmaply} package
+If \code{interactiveMode} is set to TRUE and the user has the \code{heatmaply} package
 installed - the songsim matrix will be plotted using an interactive heatmap.
 
 The \code{singleColor} corresponds to the color a full cell is colored with.
