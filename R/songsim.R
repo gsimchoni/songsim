@@ -139,7 +139,7 @@ songsim <- function(path = NULL, colorfulMode = FALSE,
 
         songMatRLong$color <- purrr::pmap_chr(songMatRLong, getRBColor)
       }
-      parPty <- par()$pty
+      .pardefault <- par(no.readonly = T)
       par(pty = "s")
       do.call(plot, c(list(x = songMatRLong$Var1, y = songMatRLong$Var2,
                            col = songMatRLong$color,
@@ -148,7 +148,7 @@ songsim <- function(path = NULL, colorfulMode = FALSE,
                            main = mainTitle, xlab = "",
                            ylab = ""),
                       plotOptions))
-      par(pty = parPty)
+      par(.pardefault)
     }
   }
 
