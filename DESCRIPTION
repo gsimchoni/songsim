@@ -9,7 +9,7 @@ Authors@R: c(
 Description: This package holds a single function to calculate and visualize a "songsim" similarity matrix
 	where cell (i, j) is filled if word i in a song's lyrics is the same as word j. This method was first
 	suggested by Colin Morris (see URLs)
-URL: https://colinmorris.github.io/blog/weird-pop-songs, https://colinmorris.github.io/SongSim/
+URL: https://colinmorris.github.io/blog/weird-pop-songs, https://colinmorris.github.io/SongSim/, http://giorasimchoni.com/2017/10/16/2017-10-16-repeat-yourself-the-songsim-package/
 Depends: R (>= 3.4.1)
 License: GPL-3
 Encoding: UTF-8

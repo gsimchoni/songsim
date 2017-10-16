@@ -41,9 +41,9 @@ Use `interactiveMode` if you have the `heatmaply` package installed:
 ```{r, eval = FALSE}
 songsim(path, interactiveMode = TRUE, singleColor = "blue")
 ```
-(See live version [here](http://giorasimchoni.com/2017/08/08/2017-08-08-lambada-the-mocap-package/))
+(See live version [here](http://giorasimchoni.com/2017/10/16/2017-10-16-repeat-yourself-the-songsim-package/))
 
-More information and examples [here](http://giorasimchoni.com/2017/08/08/2017-08-08-lambada-the-mocap-package/).
+More information and examples [here](http://giorasimchoni.com/2017/10/16/2017-10-16-repeat-yourself-the-songsim-package/).
 
 More information from Colin Morris:
 
